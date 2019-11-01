@@ -17,20 +17,13 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator";
   components: {}
 })
 export default class DelayedInputDelegate extends Vue {
-  @Prop({ type: Number,  default: 500 })    public delay!:      number;
-  @Prop({ type: Boolean, default: true })   public useInput!:   boolean;
-  @Prop({ type: Boolean, default: false })  public useChange!:  boolean;
+  @Prop({ type: Number,  default: 1000 })  public delay!:      number;
+  @Prop({ type: Boolean, default: true })  public useInput!:   boolean;
+  @Prop({ type: Boolean, default: true })  public useChange!:  boolean;
 
   private timeout?: number = undefined;
 
-  private onInput(ev: Event) {
-    if (this.useInput) this.onEvent(ev);
-  }
-  private onChange(ev: Event) {
-    if (this.useChange) this.onEvent(ev);
-  }
-
-  private onEvent(ev: Event) {
+  public gotInput(ev: Event) {
     if (this.timeout !== undefined) {
       clearTimeout(this.timeout);
     }
@@ -38,6 +31,14 @@ export default class DelayedInputDelegate extends Vue {
       this.emitDelayedInput(ev);
     }, this.delay);
   }
+
+  private onInput(ev: Event) {
+    if (this.useInput) this.gotInput(ev);
+  }
+  private onChange(ev: Event) {
+    if (this.useChange) this.gotInput(ev);
+  }
+
   private emitDelayedInput(inputEvent: Event) {
     this.timeout = undefined;
     this.$emit("delayedInput", inputEvent);

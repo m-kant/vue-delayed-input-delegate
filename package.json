@@ -1,12 +1,18 @@
 {
   "name": "vue-delayed-input-delegate",
+  "description": "Emits one 'delayedInput' event for series of input events followed by each other with short interval",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-comp": "vue-cli-service build --target lib --name vue-delayed-input-delegate src/components/delayed-input-delegate.vue",
     "lint": "vue-cli-service lint"
   },
+  "homepage": "http://mkant.ru/mink-js/",
+  "main": "dist/vue-delayed-input-delegate.common.js",
+  "module": "dist/vue-delayed-input-delegate.umd.js",
+  "unpkg": "dist/vue-delayed-input-delegate.umd.min.js",
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
