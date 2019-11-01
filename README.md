@@ -2,7 +2,7 @@
 
 VueJs component.
 
-![screenshot](vue-delayed-input-delegate.gif)
+![screenshot](https://raw.githubusercontent.com/m-kant/vue-delayed-input-delegate/master/vue-delayed-input-delegate.gif)
 
 Emits one "delayedInput" event for series of events followed by each other with short interval. For example, fast text printing will emit one "delayedInput" after short print pause. This is intended for "auto save" or "auto validate" logic.
 
@@ -12,7 +12,7 @@ It's not input itself - it is a wrapper element, listening for "input" or "chang
 [mkant.ru/mink-js/vue-delayed-input-delegate/](http://mkant.ru/mink-js/vue-delayed-input-delegate/)
 ## Installation
 ```JavaScript
-npm i vue-delayed-input-delegate --S
+npm i vue-delayed-input-delegate --Snpm publish
 ```
 ```JavaScript
 import  delayedInputDelegate from  "vue-delayed-input-delegate";
