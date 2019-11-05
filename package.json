@@ -10,32 +10,33 @@
     "lint": "vue-cli-service lint"
   },
   "types": "src/index.d.ts",
-  "homepage": "http://mkant.ru/mink-js/",
   "main": "dist/vue-delayed-input-delegate.common.js",
   "module": "dist/vue-delayed-input-delegate.umd.js",
   "unpkg": "dist/vue-delayed-input-delegate.umd.min.js",
   "keywords": [
-    "Web",
-    "Components",
-    "Vue",
-    "VueJS",
-    "Vue2",
-    "WebComponents",
-    "Input",
-    "Delayed Input",
-    "Deferred Input"
+    "vue",
+    "vueJS",
+    "vue2",
+    "component",
+    "wrapper",
+    "input",
+    "change",
+    "event",
+    "delayed",
+    "debounce",
+    "deferred"
   ],
   "dependencies": {
-    "core-js": "^3.3.2",
-    "vue": "^2.6.10",
-    "vue-class-component": "^7.0.2",
-    "vue-property-decorator": "^8.3.0"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
+    "core-js": "^3.3.2",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-typescript": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
     "typescript": "~3.5.3",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.3.0"
   }
 }

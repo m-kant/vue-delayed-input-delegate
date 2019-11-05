@@ -1,11 +1,10 @@
 
-declare module 'vue-delayed-input-delegate' {
-  import Vue from 'vue';
+import Vue from 'vue';
 
-  export default class extends Vue {
-    delay: number;
-    useInput: boolean;
-    useChange: boolean;
-  }
+declare class DelayedInputDelegate extends Vue {
+  delay: number;
+  useInput: boolean;
+  useChange: boolean;
 }
 
+export default DelayedInputDelegate;

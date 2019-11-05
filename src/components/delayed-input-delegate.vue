@@ -17,9 +17,9 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator";
   components: {}
 })
 export default class DelayedInputDelegate extends Vue {
-  @Prop({ type: Number,  default: 1000 })  public delay!:      number;
-  @Prop({ type: Boolean, default: true })  public useInput!:   boolean;
-  @Prop({ type: Boolean, default: true })  public useChange!:  boolean;
+  @Prop({ type: Number,  default: 500 })  public delay!:      number;
+  @Prop({ type: Boolean, default: true }) public useInput!:   boolean;
+  @Prop({ type: Boolean, default: true }) public useChange!:  boolean;
 
   private timeout?: number = undefined;
 
