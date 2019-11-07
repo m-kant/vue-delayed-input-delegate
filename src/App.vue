@@ -9,6 +9,10 @@
       <p>Emits one "delayedInput" event for series of events followed by each other with short interval. For example, fast text printing will emit one "delayedInput" after short print pause. This is intended for "auto save" or "auto validate" logic.</p>
       <p>It's not input itself - it is a wrapper element, listening for "input" or "change" events propagated by nested elements. So you can use one "delegate" for group of inputs.</p>
 
+    <h2>Installation</h2>
+<pre>npm install vue-delayed-input-delegate --S</pre>
+<pre>import delayedInputDelegate from "vue-delayed-input-delegate";</pre>
+
     <h2>Usage</h2>
 <pre>
 &lt;delayed-delegate @delayedInput="autoSave">
