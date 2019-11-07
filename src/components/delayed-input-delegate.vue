@@ -23,7 +23,7 @@ export default class DelayedInputDelegate extends Vue {
 
   private timeout?: number = undefined;
 
-  public gotInput(ev: Event) {
+  public gotInput(ev: Event) { // ?? pushEvent(Event|undefined)
     if (this.timeout !== undefined) {
       clearTimeout(this.timeout);
     }

@@ -1,7 +1,8 @@
 {
   "name": "vue-delayed-input-delegate",
   "description": "Emits one 'delayedInput' event for series of input events followed by each other with short interval",
-  "version": "0.1.2",
+  "version": "0.1.3",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

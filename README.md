@@ -12,7 +12,7 @@ It's not input itself - it is a wrapper element, listening for "input" or "chang
 [mkant.ru/mink-js/vue-delayed-input-delegate/](http://mkant.ru/mink-js/vue-delayed-input-delegate/)
 ## Installation
 ```JavaScript
-npm i vue-delayed-input-delegate --Snpm publish
+npm i vue-delayed-input-delegate --S
 ```
 ```JavaScript
 import  delayedInputDelegate from  "vue-delayed-input-delegate";
