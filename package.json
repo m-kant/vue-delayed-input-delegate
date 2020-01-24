@@ -14,7 +14,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-comp": "vue-cli-service build --target lib --name vue-delayed-input-delegate src/components/delayed-input-delegate.vue",
+    "comp": "vue-cli-service build --target lib --name vue-delayed-input-delegate src/components/delayed-input-delegate.vue",
     "lint": "vue-cli-service lint"
   },
   "types": "src/index.d.ts",

@@ -23,7 +23,7 @@ export default class DelayedInputDelegate extends Vue {
 
   private timeout?: number = undefined;
 
-  public gotInput(ev: Event|any = undefined) { // ?? pushEvent(Event|undefined)
+  public gotInput(ev?: Event|any) { // ?? pushEvent(Event|undefined)
     if (this.timeout !== undefined) {
       clearTimeout(this.timeout);
     }
@@ -32,7 +32,7 @@ export default class DelayedInputDelegate extends Vue {
     }, this.delay);
   }
 
-  public touch(){ this.gotInput(); }
+  public touch() { this.gotInput(); }
 
   private onInput(ev: Event) {
     if (this.useInput) this.gotInput(ev);
