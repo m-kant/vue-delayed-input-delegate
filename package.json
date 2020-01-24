@@ -3,6 +3,13 @@
   "description": "Emits one 'delayedInput' event for series of input events followed by each other with short interval",
   "version": "0.1.4",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-kant/vue-delayed-input-delegate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m-kant/vue-delayed-input-delegate/issues"
+  },
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

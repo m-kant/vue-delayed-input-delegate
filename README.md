@@ -9,11 +9,15 @@ Emits one "delayedInput" event for series of events followed by each other with 
 It's not input itself - it is a wrapper element, listening for "input" or "change" events propagated by nested elements. So you can use one "delegate" for group of inputs.
 
 ## Demo
+
 [mkant.ru/mink-js/vue-delayed-input-delegate/](http://mkant.ru/mink-js/vue-delayed-input-delegate/)
+
 ## Installation
+
 ```JavaScript
 npm i vue-delayed-input-delegate --S
 ```
+
 ```JavaScript
 import  delayedInputDelegate from  "vue-delayed-input-delegate";
 ```
@@ -30,11 +34,10 @@ import  delayedInputDelegate from  "vue-delayed-input-delegate";
 
 ## Custom Inputs
 
-If input component does not emit standart DOM event and thus, it does not propagates up in DOM, you can "touch" delegate "by hands".
+If input component does not emit standart DOM event and thus, it does not propagates up through DOM, you can "touch" delegate "by hands" via `ref` attribute.
 
 ```html
-<delayed-input-delegate @delayedInput="autoSave" ref="delegate">
-  <!-- put any input elements here ... -->
+<delayed-input-delegate ref="delegate" @delayedInput="autoSave">
   <custom-input v-model="someVar" @input="$refs.delegate.touch()" />
 </delayed-input-delegate>
 ```
