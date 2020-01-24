@@ -27,3 +27,14 @@ import  delayedInputDelegate from  "vue-delayed-input-delegate";
   <textarea v-model="text"></textarea>
 </delayed-input-delegate>
 ```
+
+## Custom Inputs
+
+If input component does not emit standart DOM event and thus, it does not propagates up in DOM, you can "touch" delegate "by hands".
+
+```html
+<delayed-input-delegate @delayedInput="autoSave" ref="delegate">
+  <!-- put any input elements here ... -->
+  <custom-input v-model="someVar" @input="$refs.delegate.touch()" />
+</delayed-input-delegate>
+```
